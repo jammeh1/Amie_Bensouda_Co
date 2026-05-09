@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      var path = window.location.pathname + window.location.search + window.location.hash;
+      var repoName = window.location.pathname.split('/')[1];
+      window.location.replace(
+        window.location.origin + '/' + repoName + '/?p=' + encodeURIComponent(path)
+      );
+    </script>
+  </head>
+</html>
