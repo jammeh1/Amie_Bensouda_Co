@@ -13,8 +13,12 @@
 
     <meta property="og:title" content="Amie Bensouda & Co — Corporate Legal Services LP" />
     <meta property="og:description" content="Leading corporate legal excellence in The Gambia since 1995." />
-    <meta property="og:type" content="website" />
-  </head>
+   <meta property="og:type" content="website" />
+    <script>
+      var p = new URLSearchParams(window.location.search).get('p');
+      if (p) window.history.replaceState(null, '', p);
+    </script>
+    </head>
 
   <body>
     <div id="root"></div>
